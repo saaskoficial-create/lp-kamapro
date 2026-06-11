@@ -8,9 +8,9 @@ Build pronto:
 
 ## Como publicar
 
-Publique o conteudo de `dist/` dentro da rota `/lp/`.
+Publique o conteúdo de `dist/` dentro da rota `/lp/`.
 
-Os assets ja foram gerados com base `/lp/`, entao o HTML referencia:
+Os assets já foram gerados com base `/lp/`, então o HTML referencia:
 
 - `/lp/assets/...`
 - `/lp/videos/...`
@@ -38,7 +38,7 @@ Se o hosting exigir regra de fallback, apontar:
 
 ## Meta Pixel / CSP
 
-A LP usa Meta Pixel ID `977020721999733`. Se o dominio mantiver CSP, liberar:
+A LP usa Meta Pixel ID `977020721999733`. Se o domínio mantiver CSP, liberar:
 
 ```text
 script-src https://connect.facebook.net

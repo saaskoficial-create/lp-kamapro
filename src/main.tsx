@@ -70,7 +70,7 @@ const features: Feature[] = [
   {
     label: "Ideias",
     title: "Ideias sem constrangimento",
-    text: "Sugestoes claras para explorar a dois sem transformar o momento em pesquisa desconfortavel.",
+    text: "Sugestões claras para explorar a dois sem transformar o momento em pesquisa desconfortável.",
     before: "Esperar o clima aparecer do nada.",
     after: "Abrir uma ideia pronta e escolher juntos o tom da noite.",
     image: assetUrl("/images/solution/kamapro-bloco-1.png")
@@ -79,32 +79,32 @@ const features: Feature[] = [
     label: "Playlists",
     title: "Playlists para cada clima",
     text: "Do leve ao mais curioso, organize possibilidades por momento, desejo e ritmo do casal.",
-    before: "Ficar sem repertorio quando a rotina pesa.",
+    before: "Ficar sem repertório quando a rotina pesa.",
     after: "Ter caminhos organizados por clima, curiosidade e intensidade.",
     image: assetUrl("/images/solution/kamapro-bloco-2.png")
   },
   {
-    label: "Historias",
-    title: "Historias para entrar no clima",
-    text: "Conteudos que criam antecipacao e ajudam a conversa a acontecer com mais naturalidade.",
+    label: "Histórias",
+    title: "Histórias para entrar no clima",
+    text: "Conteúdos que criam antecipação e ajudam a conversa a acontecer com mais naturalidade.",
     before: "Puxar assunto e sentir que ficou artificial.",
-    after: "Usar uma historia como ponto de partida leve e envolvente.",
+    after: "Usar uma história como ponto de partida leve e envolvente.",
     image: assetUrl("/images/solution/kamapro-bloco-3.png")
   },
   {
     label: "Desafios",
     title: "Desafios para quebrar o gelo",
-    text: "Convites simples para trazer brincadeira, cumplicidade e novidade para a relacao.",
-    before: "A conversa trava antes de virar experiencia.",
-    after: "Transformar curiosidade em uma acao simples para fazer a dois.",
+    text: "Convites simples para trazer brincadeira, cumplicidade e novidade para a relação.",
+    before: "A conversa trava antes de virar experiência.",
+    after: "Transformar curiosidade em uma ação simples para fazer a dois.",
     image: assetUrl("/images/solution/kamapro-bloco-4.png")
   },
   {
     label: "Favoritos",
     title: "Favoritos do casal",
-    text: "Guarde o que combina com voces e volte depois, no momento certo, sem precisar procurar de novo.",
-    before: "Perder ideias boas e recomecar sempre do zero.",
-    after: "Criar um repertorio privado para voltar quando o clima aparecer.",
+    text: "Guarde o que combina com vocês e volte depois, no momento certo, sem precisar procurar de novo.",
+    before: "Perder ideias boas e recomeçar sempre do zero.",
+    after: "Criar um repertório privado para voltar quando o clima aparecer.",
     image: assetUrl("/images/solution/kamapro-bloco-5.png")
   }
 ];
@@ -120,14 +120,14 @@ const proofVideos: ProofVideo[] = [
   {
     label: "iOS Chrome",
     title: "Acesse pelo navegador",
-    text: "A experiencia funciona de forma simples no browser.",
+    text: "A experiência funciona de forma simples no browser.",
     src: assetUrl("/videos/ChromeIOSBom.mp4"),
     poster: assetUrl("/frames/ios_chrome_02.jpg")
   },
   {
     label: "iOS Safari",
     title: "Use como PWA",
-    text: "Acesso rapido, discreto e pronto para repetir.",
+    text: "Acesso rápido, discreto e pronto para repetir.",
     src: assetUrl("/videos/PWA_IOS_SAFARI.mp4"),
     poster: assetUrl("/frames/pwa_safari_03.jpg")
   }
@@ -135,19 +135,19 @@ const proofVideos: ProofVideo[] = [
 
 const faq = [
   {
-    question: "O KamaPro e discreto?",
+    question: "O KamaPro é discreto?",
     answer:
-      "Sim. A proposta da experiencia e ser privada, direta e controlada pelo casal."
+      "Sim. A proposta da experiência é ser privada, direta e controlada pelo casal."
   },
   {
     question: "Preciso instalar aplicativo?",
     answer:
-      "Nao. Voce pode acessar pelo navegador e, se quiser, adicionar como PWA na tela inicial."
+      "Não. Você pode acessar pelo navegador e, se quiser, adicionar como PWA na tela inicial."
   },
   {
-    question: "Serve para casais que estao comecando a explorar?",
+    question: "Serve para casais que estão começando a explorar?",
     answer:
-      "Serve. A ideia e dar repertorio sem pressa: cada casal escolhe o que combina com seu momento."
+      "Serve. A ideia é dar repertório sem pressa: cada casal escolhe o que combina com seu momento."
   }
 ];
 
@@ -175,7 +175,7 @@ function ExampleCards() {
       title: "480. Cat",
       description:
         "Até a pose mais simples pode entregar experiências inesquecíveis, ou virar mais uma marca na lista do que já foi testado",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
       tags: ["pose", "gamepro", "casal", "+8"]
     },
@@ -184,7 +184,7 @@ function ExampleCards() {
       title: "346. Harmony",
       description:
         "Nesta pose não há o que pensar — desligue os pensamentos, abrace o parceiro e absorva tudo, procurando harmonia na proximidade, na ternura e no tempo que passam juntos.",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
       tags: ["pose", "harmonia", "proximidade", "+8"]
     },
@@ -193,7 +193,7 @@ function ExampleCards() {
       title: "465. Eagle",
       description:
         "Corpos em alta voltagem reagem ao menor toque, acendem como fósforos — e esta pose permite saciar a fome com olhares profundos e penetração intensa.",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
       tags: ["pose", "intenso", "olhares", "+8"]
     },
@@ -202,7 +202,7 @@ function ExampleCards() {
       title: "503. Anvil",
       description:
         "Um pouco de doce nunca fez mal a ninguém — especialmente quando a parceira é o próprio doce, e nesta pose dá para experimentar a profundidade desse sabor preferido.",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
       tags: ["pose", "profundo", "casal", "+8"]
     },
@@ -211,7 +211,7 @@ function ExampleCards() {
       title: "374. Acrobat",
       description:
         "A linguagem corporal é absurdamente eloquente — em vez de várias piruetas, basta uma única pose bem provocante.",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
       tags: ["pose", "provocante", "corpo", "+8"]
     },
@@ -220,7 +220,7 @@ function ExampleCards() {
       title: "256. Whisper",
       description:
         "Acaricie o pênis do parceiro com extrema delicadeza usando a boca — ele vai enlouquecer com o cuidado, especialmente nesta pose em que basta se deitar e absorver cada onda de prazer.",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
       tags: ["pose", "oral", "cuidado", "+8"]
     },
@@ -229,7 +229,7 @@ function ExampleCards() {
       title: "501. Inquisitor",
       description:
         "Esta pose ganhou este nome fatídico porque a mulher fica totalmente nas mãos do parceiro, de corpo e alma — é ele quem decide quando esse jogo termina.",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
       tags: ["pose", "entrega", "jogo", "+8"]
     },
@@ -238,16 +238,16 @@ function ExampleCards() {
       title: "43. Bullfighter",
       description:
         "Esta pose entrega ao parceiro uma oportunidade rara: encontrar o ponto G com precisão, graças ao posicionamento plano do corpo da mulher e ao acesso totalmente desimpedido à região íntima.",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
-      tags: ["pose", "ponto g", "precisao", "+8"]
+      tags: ["pose", "ponto g", "precisão", "+8"]
     },
     {
       image: assetUrl("/cards/poses/pose-09.webp"),
       title: "290. Yin-Yang",
       description:
         "Esta é uma versão muito interessante e prática do 69 — se vocês são casal que pratica sexo oral, anote essa configuração. A mulher se acomoda deitada de costas e eleva completamente as pernas estendidas.",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
       tags: ["pose", "oral", "69", "+8"]
     },
@@ -256,7 +256,7 @@ function ExampleCards() {
       title: "508. Shining",
       description:
         "Amem, se beijem, façam amor e provem um ao outro — quando vocês se entregam totalmente, isso fortalece ainda mais os sentimentos e as emoções compartilhadas.",
-      difficulty: "Medio",
+      difficulty: "Médio",
       rating: "0.0",
       tags: ["pose", "beijo", "entrega", "+8"]
     }
@@ -268,7 +268,7 @@ function ExampleCards() {
       <div className="absolute -left-32 bottom-12 h-96 w-96 rounded-full bg-kama-red/15 blur-3xl" />
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-[0.92fr_1.08fr]">
         <div className="relative z-10">
-          <p className="section-kicker">Exemplos de experiencias</p>
+          <p className="section-kicker">Exemplos de experiências</p>
           <h2 className="mt-4 max-w-3xl text-4xl font-extrabold leading-tight text-white sm:text-6xl">
             Descubra uma ideia, salve o desejo e transforme curiosidade em{" "}
             <span className="text-kama-pink">momento a dois</span>.
@@ -281,7 +281,7 @@ function ExampleCards() {
           <div className="mt-8 grid gap-3 text-sm font-medium text-white/70 sm:max-w-md">
             <div className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3">
               <Check className="size-4 text-kama-pink" />
-              Deslize para sentir a experiencia de descoberta.
+              Deslize para sentir a experiência de descoberta.
             </div>
             <div className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3">
               <Check className="size-4 text-kama-pink" />
@@ -435,7 +435,7 @@ function Hero() {
             </span>
           </div>
           <h1 className="max-w-5xl text-[2.45rem] font-extrabold leading-[1.02] tracking-normal text-white sm:text-6xl lg:text-[5.35rem]">
-            A rotina nao precisa ser o fim do desejo.
+            A rotina não precisa ser o fim do desejo.
             <span className="text-kama-pink"> Redescubra o clima a dois.</span>
           </h1>
           <div className="relative z-10 mt-5 w-full max-w-4xl sm:mt-10">
@@ -443,15 +443,15 @@ function Hero() {
           </div>
           <p className="mt-5 max-w-3xl text-base leading-7 text-white/78 sm:mt-7 sm:text-2xl sm:leading-9">
             O KamaPro ajuda casais a descobrirem novas ideias, playlists e
-            desafios intimos com privacidade, leveza e zero constrangimento.
+            desafios íntimos com privacidade, leveza e zero constrangimento.
           </p>
           <div className="mt-6 flex flex-col items-center gap-3 sm:mt-9 sm:flex-row sm:gap-4">
             <a
               className="btn btn-primary h-[3.25rem] rounded-full px-6 text-sm sm:h-16 sm:px-9 sm:text-base"
               href={registrationUrl}
-              onClick={() => trackMetaEvent("Lead", "Hero - descobrir primeira experiencia")}
+              onClick={() => trackMetaEvent("Lead", "Hero - descobrir primeira experiência")}
             >
-              Descobrir minha primeira experiencia
+              Descobrir minha primeira experiência
               <ArrowRight className="size-5" />
             </a>
             <a
@@ -621,20 +621,20 @@ function Problem() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl font-extrabold leading-tight text-white sm:text-6xl">
-            Quando a intimidade cai no automatico, nao falta amor.
-            <span className="text-kama-pink"> Falta repertorio.</span>
+            Quando a intimidade cai no automático, não falta amor.
+            <span className="text-kama-pink"> Falta repertório.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/68">
             O KamaPro foi criado para ajudar casais a transformar curiosidade
-            em novas experiencias, sem constrangimento e sem depender de
-            conteudo solto pela internet.
+            em novas experiências, sem constrangimento e sem depender de
+            conteúdo solto pela internet.
           </p>
         </div>
         <div className="mt-14 grid gap-5 md:grid-cols-3">
           {[
-            ["Ideias sem travar", "Encontre caminhos para comecar sem precisar improvisar na hora."],
-            ["Privado por natureza", "Explore no ritmo de voces, com uma experiencia discreta e segura."],
-            ["Sempre ha algo novo", "Playlists, historias e desafios para manter o desejo em movimento."]
+            ["Ideias sem travar", "Encontre caminhos para começar sem precisar improvisar na hora."],
+            ["Privado por natureza", "Explore no ritmo de vocês, com uma experiência discreta e segura."],
+            ["Sempre há algo novo", "Playlists, histórias e desafios para manter o desejo em movimento."]
           ].map(([title, text], index) => (
             <div className="linkpriv-card flex min-h-[220px] flex-col justify-center p-8" key={title}>
               <span className="mb-7 grid size-12 shrink-0 place-items-center rounded-full bg-[linear-gradient(135deg,#FE064D,#FD2479)] text-sm font-extrabold text-white">
@@ -662,27 +662,27 @@ function HowItWorks() {
     {
       icon: MousePointer2,
       title: "Escolha o clima",
-      text: "Comece pelo tom da noite: romantico, curioso, leve ou mais provocante. O casal entra sem precisar saber exatamente o que procurar."
+      text: "Comece pelo tom da noite: romântico, curioso, leve ou mais provocante. O casal entra sem precisar saber exatamente o que procurar."
     },
     {
       icon: ListChecks,
       title: "Veja ideias prontas para conversar",
-      text: "Cards, playlists, historias e desafios viram pontos de partida para falar sobre desejo sem deixar a conversa pesada."
+      text: "Cards, playlists, histórias e desafios viram pontos de partida para falar sobre desejo sem deixar a conversa pesada."
     },
     {
       icon: HeartHandshake,
       title: "Salve favoritos do casal",
-      text: "Tudo que desperta interesse pode ficar guardado para depois, criando um repertorio privado que combina com voces."
+      text: "Tudo que desperta interesse pode ficar guardado para depois, criando um repertório privado que combina com vocês."
     },
     {
       icon: Gamepad2,
-      title: "Transforme em experiencia",
-      text: "Quando o clima aparecer, voces escolhem um desafio, uma playlist ou uma historia e deixam a noite acontecer com naturalidade."
+      title: "Transforme em experiência",
+      text: "Quando o clima aparecer, vocês escolhem um desafio, uma playlist ou uma história e deixam a noite acontecer com naturalidade."
     },
     {
       icon: Smartphone,
       title: "Acesse pelo celular",
-      text: "Sem complicacao: abra pelo navegador, instale como PWA se quiser e mantenha a experiencia discreta no dia a dia."
+      text: "Sem complicação: abra pelo navegador, instale como PWA se quiser e mantenha a experiência discreta no dia a dia."
     }
   ];
   const ribbons = [
@@ -799,14 +799,14 @@ function HowItWorks() {
               </h2>
               <p className="mt-6 max-w-md text-lg leading-8 text-white/66">
                 Um fluxo pensado para criar clima, reduzir constrangimento e dar
-                repertorio sem transformar intimidade em tarefa.
+                repertório sem transformar intimidade em tarefa.
               </p>
               <a
                 className="btn btn-secondary mt-8 rounded-full px-7"
                 href={registrationUrl}
-                onClick={() => trackMetaEvent("Lead", "Como funciona - comecar agora")}
+                onClick={() => trackMetaEvent("Lead", "Como funciona - começar agora")}
               >
-                Comecar agora
+                Começar agora
                 <ArrowRight className="size-4" />
               </a>
             </div>
@@ -896,13 +896,13 @@ function Solution() {
       <div className="absolute -right-32 bottom-20 h-[32rem] w-[32rem] rounded-full bg-white/10 blur-[7rem]" />
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="section-kicker">A solucao</p>
+          <p className="section-kicker">A solução</p>
           <h2 className="mx-auto mt-4 max-w-4xl text-4xl font-extrabold leading-tight text-white sm:text-6xl">
-            Antes era improviso. Agora o casal tem um repertorio vivo.
+            Antes era improviso. Agora o casal tem um repertório vivo.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/60">
             Em vez de pesquisar no impulso ou deixar a conversa morrer, o
-            KamaPro organiza ideias, playlists, historias e desafios para o
+            KamaPro organiza ideias, playlists, histórias e desafios para o
             casal voltar a experimentar junto.
           </p>
         </div>
@@ -1009,7 +1009,7 @@ function ProductAccess() {
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/60">
               O KamaPro funciona no celular, pelo navegador ou como PWA. Simples
-              para abrir, discreto para usar e facil de repetir.
+              para abrir, discreto para usar e fácil de repetir.
             </p>
           </div>
         </div>
@@ -1031,23 +1031,23 @@ function Testimonials() {
     {
       title: "A conversa destravou",
       quote:
-        "A gente queria sair da mesmice, mas nao sabia como puxar o assunto. As ideias prontas deixaram tudo mais leve.",
-      name: "Marina e Leo",
-      meta: "juntos ha 6 anos",
+        "A gente queria sair da mesmice, mas não sabia como puxar o assunto. As ideias prontas deixaram tudo mais leve.",
+      name: "Marina e Léo",
+      meta: "juntos há 6 anos",
       initials: "ML"
     },
     {
       title: "Virou ritual do casal",
       quote:
-        "Nao parece uma lista fria. A gente abre, escolhe o clima da noite e salva o que combina com o nosso momento.",
+        "Não parece uma lista fria. A gente abre, escolhe o clima da noite e salva o que combina com o nosso momento.",
       name: "Bia e Rafael",
-      meta: "usuarios Premium",
+      meta: "usuários Premium",
       initials: "BR"
     },
     {
       title: "Sem pressao, sem vergonha",
       quote:
-        "O melhor foi poder explorar aos poucos. Nao teve aquela sensacao estranha de pesquisar no impulso e se perder.",
+        "O melhor foi poder explorar aos poucos. Não teve aquela sensação estranha de pesquisar no impulso e se perder.",
       name: "Casal KamaPro",
       meta: "em fase de redescoberta",
       initials: "KP"
@@ -1055,9 +1055,9 @@ function Testimonials() {
     {
       title: "Mais assunto, mais clima",
       quote:
-        "Os favoritos ajudam muito. Quando surge a vontade, a gente ja tem um ponto de partida em vez de comecar do zero.",
-      name: "Lu e Andre",
-      meta: "juntos ha 3 anos",
+        "Os favoritos ajudam muito. Quando surge a vontade, a gente já tem um ponto de partida em vez de começar do zero.",
+      name: "Lu e André",
+      meta: "juntos há 3 anos",
       initials: "LA"
     }
   ];
@@ -1070,11 +1070,11 @@ function Testimonials() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-kicker">Depoimentos</p>
           <h2 className="mt-4 text-4xl font-extrabold leading-tight text-white sm:text-6xl">
-            Casais que nao querem uma relacao perfeita. Querem uma relacao viva.
+            Casais que não querem uma relação perfeita. Querem uma relação viva.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/58">
-            Historias curtas de quem so precisava de um empurrao elegante para
-            voltar a falar sobre desejo, rotina e novas experiencias.
+            Histórias curtas de quem só precisava de um empurrão elegante para
+            voltar a falar sobre desejo, rotina e novas experiências.
           </p>
         </div>
         <div className="testimonial-carousel mt-12 flex gap-6 overflow-x-auto pb-8">
@@ -1122,31 +1122,31 @@ function Plans() {
     <section id="planos" className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="max-w-3xl">
-          <p className="section-kicker">Comece sem friccao</p>
+          <p className="section-kicker">Comece sem fricção</p>
           <h2 className="section-title">
-            Comece gratis. Desbloqueie mais repertorio quando quiser ir alem.
+            Comece grátis. Desbloqueie mais repertório quando quiser ir além.
           </h2>
         </div>
         <div className="mt-12 grid gap-5 lg:grid-cols-[0.92fr_1.08fr]">
           <PlanCard
             title="Freemium"
             text="Ideal para sentir a proposta e descobrir as primeiras ideias a dois."
-            cta="Comecar gratis"
+            cta="Começar grátis"
             ctaHref={registrationUrl}
             benefits={[
               "Primeiras ideias para testar",
               "Acesso simples pelo celular",
-              "Experiencia privada"
+              "Experiência privada"
             ]}
           />
           <PlanCard
             title="Premium"
-            text="Para ter mais playlists, historias, desafios e possibilidades para manter o clima vivo."
+            text="Para ter mais playlists, histórias, desafios e possibilidades para manter o clima vivo."
             cta="Ver Premium"
             ctaHref={pricingUrl}
             benefits={[
-              "Mais repertorio para o casal",
-              "Playlists e historias premium",
+              "Mais repertório para o casal",
+              "Playlists e histórias premium",
               "Desafios para quebrar o gelo"
             ]}
             featured
@@ -1211,9 +1211,9 @@ function Faq() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.82fr_1.18fr]">
         <div>
           <p className="section-kicker">FAQ</p>
-          <h2 className="section-title">Duvidas antes de explorar</h2>
+          <h2 className="section-title">Dúvidas antes de explorar</h2>
           <p className="section-copy">
-            O essencial para comecar com privacidade, leveza e sem
+            O essencial para começar com privacidade, leveza e sem
             constrangimento.
           </p>
         </div>
@@ -1232,14 +1232,14 @@ function Faq() {
           <div className="final-cta">
             <WandSparkles className="size-8 text-kama-pink" />
             <h3 className="mt-5 font-display text-4xl font-normal leading-tight text-white">
-              Prontos para sair do automatico sem perder a leveza?
+              Prontos para sair do automático sem perder a leveza?
             </h3>
             <a
               className="btn btn-primary mt-7"
               href={registrationUrl}
-              onClick={() => trackMetaEvent("Lead", "FAQ - comecar agora")}
+              onClick={() => trackMetaEvent("Lead", "FAQ - começar agora")}
             >
-              Comecar agora
+              Começar agora
               <ArrowRight className="size-4" />
             </a>
           </div>
@@ -1270,22 +1270,22 @@ function Footer() {
           </div>
           <p className="mt-5 max-w-md text-base leading-7 text-white/58">
             Um jeito mais leve, privado e organizado de descobrir novas
-            experiencias a dois.
+            experiências a dois.
           </p>
         </div>
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-kama-pink">
-            Navegacao
+            Navegação
           </p>
           <div className="mt-4 grid gap-3 text-sm text-white/58">
             <a className="transition hover:text-white" href="#top">
-              Inicio
+              Início
             </a>
             <a className="transition hover:text-white" href="https://kamapro.io/">
               Site principal
             </a>
             <a className="transition hover:text-white" href="#experiencias">
-              Experiencias
+              Experiências
             </a>
             <a className="transition hover:text-white" href="#planos">
               Planos
@@ -1333,9 +1333,9 @@ function MobileStickyCta() {
       <a
         className="btn btn-primary h-12 w-full justify-center"
         href={registrationUrl}
-        onClick={() => trackMetaEvent("Lead", "Mobile sticky - comecar gratis")}
+        onClick={() => trackMetaEvent("Lead", "Mobile sticky - começar grátis")}
       >
-        Comecar gratis
+        Começar grátis
         <ArrowRight className="size-4" />
       </a>
     </div>
