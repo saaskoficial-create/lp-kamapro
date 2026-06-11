@@ -1,0 +1,19 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="56" fill="#080407"/>
+  <rect width="900" height="1200" rx="56" fill="url(#g)"/>
+  <circle cx="730" cy="210" r="260" fill="#FD2479" fill-opacity=".22"/>
+  <circle cx="120" cy="980" r="360" fill="#FE064D" fill-opacity=".18"/>
+  <text x="72" y="108" fill="#FD2479" font-family="DM Sans, Arial" font-size="28" font-weight="700" letter-spacing="8">EXEMPLO 01</text>
+  <text x="72" y="250" fill="white" font-family="Playfair Display, Georgia" font-size="92">Noite sem</text>
+  <text x="72" y="350" fill="white" font-family="Playfair Display, Georgia" font-size="92">rotina</text>
+  <text x="72" y="450" fill="#F7C8D6" font-family="DM Sans, Arial" font-size="34">Uma playlist para quebrar o automático e começar leve.</text>
+  <rect x="72" y="724" width="756" height="1" fill="white" fill-opacity=".16"/>
+  <text x="72" y="804" fill="white" font-family="DM Sans, Arial" font-size="38" font-weight="700">Comece com clima</text>
+  <text x="72" y="866" fill="#CDB8C0" font-family="DM Sans, Arial" font-size="30">Ideias guiadas para transformar curiosidade em experiência.</text>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="900" y2="1200">
+      <stop stop-color="#2A0C19"/>
+      <stop offset="1" stop-color="#050407"/>
+    </linearGradient>
+  </defs>
+</svg>

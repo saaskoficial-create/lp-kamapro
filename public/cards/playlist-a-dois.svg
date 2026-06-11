@@ -1,0 +1,17 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="56" fill="#060406"/>
+  <rect x="38" y="38" width="824" height="1124" rx="42" stroke="#FD2479" stroke-opacity=".58" stroke-width="2"/>
+  <circle cx="450" cy="390" r="280" fill="#FD2479" fill-opacity=".18"/>
+  <text x="72" y="108" fill="#FD2479" font-family="DM Sans, Arial" font-size="28" font-weight="700" letter-spacing="8">EXEMPLO 02</text>
+  <text x="72" y="270" fill="white" font-family="Playfair Display, Georgia" font-size="92">Playlist</text>
+  <text x="72" y="370" fill="white" font-family="Playfair Display, Georgia" font-size="92">a dois</text>
+  <rect x="72" y="520" width="620" height="82" rx="20" fill="#151017"/>
+  <rect x="72" y="632" width="520" height="82" rx="20" fill="#151017"/>
+  <rect x="72" y="744" width="690" height="82" rx="20" fill="#151017"/>
+  <circle cx="112" cy="561" r="15" fill="#FE064D"/>
+  <circle cx="112" cy="673" r="15" fill="#FD2479"/>
+  <circle cx="112" cy="785" r="15" fill="#FE064D"/>
+  <text x="146" y="574" fill="#EADBE0" font-family="DM Sans, Arial" font-size="30">Primeiro clima</text>
+  <text x="146" y="686" fill="#EADBE0" font-family="DM Sans, Arial" font-size="30">Favoritos</text>
+  <text x="146" y="798" fill="#EADBE0" font-family="DM Sans, Arial" font-size="30">Desafio GamePro</text>
+</svg>

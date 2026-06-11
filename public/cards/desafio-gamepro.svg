@@ -1,0 +1,17 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="56" fill="#070407"/>
+  <path d="M0 0H900V620C720 550 596 660 448 620C290 577 193 493 0 560V0Z" fill="url(#g)"/>
+  <text x="72" y="108" fill="#FD2479" font-family="DM Sans, Arial" font-size="28" font-weight="700" letter-spacing="8">EXEMPLO 03</text>
+  <text x="72" y="260" fill="white" font-family="Playfair Display, Georgia" font-size="92">Desafio</text>
+  <text x="72" y="360" fill="white" font-family="Playfair Display, Georgia" font-size="92">GamePro</text>
+  <text x="72" y="456" fill="#F3C5D0" font-family="DM Sans, Arial" font-size="34">Uma carta por vez. Sem pressão, com mais cumplicidade.</text>
+  <rect x="72" y="760" width="756" height="150" rx="28" fill="#130D12" stroke="#FD2479" stroke-opacity=".55"/>
+  <text x="118" y="850" fill="white" font-family="DM Sans, Arial" font-size="38" font-weight="700">Escolha, salve, repita.</text>
+  <text x="118" y="906" fill="#CDB8C0" font-family="DM Sans, Arial" font-size="28">Experiências organizadas para o casal.</text>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="900" y2="620">
+      <stop stop-color="#FE064D"/>
+      <stop offset="1" stop-color="#FD2479"/>
+    </linearGradient>
+  </defs>
+</svg>

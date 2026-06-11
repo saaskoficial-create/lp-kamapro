@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+*.log
+*.tsbuildinfo
+screenshots/
+_lp-reference-frames/
+*.zip
+/ChromeAndroid.mp4
+/ChromeIOSBom.mp4
+/PWA_IOS_SAFARI.mp4
+/LogoKamaPro.png
