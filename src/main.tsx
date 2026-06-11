@@ -318,7 +318,7 @@ function PoseCardDeck({
     <div className="relative h-full w-full">
       <SwipeableCardStack
         borderRadius={28}
-        greenShadowColor="rgba(89, 224, 143, 0.26)"
+        greenShadowColor="rgba(253, 36, 121, 0.28)"
         images={cards.map((card) => card.image).reverse()}
         innerStrokeColor="rgba(253, 36, 121, 0.38)"
         redShadowColor="rgba(254, 6, 77, 0.38)"
@@ -611,7 +611,7 @@ function PhoneShell({
 }) {
   return (
     <div
-      className={`relative mx-auto rounded-[2.25rem] border border-white/15 bg-black p-3 shadow-2xl ${featured ? "w-[275px] sm:w-[310px]" : "w-[220px]"} ${className}`}
+      className={`relative mx-auto w-[275px] rounded-[2.25rem] border border-white/15 bg-black p-3 shadow-2xl ${featured ? "sm:w-[310px]" : "sm:w-[220px]"} ${className}`}
     >
       <div className="absolute left-1/2 top-4 z-10 h-5 w-24 -translate-x-1/2 rounded-full bg-black" />
       <div className="overflow-hidden rounded-[1.8rem] border border-white/10 bg-[#100d13]">
@@ -1039,8 +1039,8 @@ function ProductAccess() {
         </div>
         <div className="relative mt-14 w-full sm:mt-16">
           <div className="brand-orb phone-showcase-orb" aria-hidden="true" />
-          <div className="phone-showcase-scroll -mx-5 overflow-x-auto px-5 pb-5 sm:mx-auto sm:overflow-visible sm:px-0 sm:pb-0">
-            <div className="phone-showcase-grid mx-auto flex w-max max-w-none items-end gap-5 sm:grid sm:w-auto sm:max-w-5xl sm:grid-cols-3">
+          <div className="phone-showcase-list">
+            <div className="phone-showcase-grid mx-auto grid max-w-5xl items-end gap-8 sm:grid-cols-3 sm:gap-5">
               <PhoneShell video={proofVideos[0]} />
               <PhoneShell video={proofVideos[1]} featured />
               <PhoneShell video={proofVideos[2]} />

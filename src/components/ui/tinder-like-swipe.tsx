@@ -24,7 +24,7 @@ export function SwipeableCardStack({
   images = [],
   borderRadius = 16,
   showInnerShadows = true,
-  greenShadowColor = "rgba(45, 150, 45, 0.75)",
+  greenShadowColor = "rgba(253, 36, 121, 0.34)",
   redShadowColor = "rgba(224, 83, 83, 0.75)",
   innerStrokeColor = "rgba(255, 255, 255, 0.12)",
   shadowSize = "0 24px 70px",
@@ -35,7 +35,7 @@ export function SwipeableCardStack({
   renderControls
 }: SwipeableCardStackProps) {
   const [cards, setCards] = React.useState([...images]);
-  const [dragDirections, setDragDirections] = React.useState<Record<number, "left" | "right" | null>>({});
+  const [dragDirections, setDragDirections] = React.useState<Record<string, "left" | "right" | null>>({});
   const swipeThreshold = 100;
 
   React.useEffect(() => {
@@ -54,24 +54,24 @@ export function SwipeableCardStack({
     }
   }, [cards.length, images]);
 
-  const handleDrag = (_event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo, index: number) => {
+  const handleDrag = (_event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo, image: string) => {
     setDragDirections((prev) => ({
       ...prev,
-      [index]: info.offset.x > 0 ? "right" : "left"
+      [image]: info.offset.x > 0 ? "right" : "left"
     }));
   };
 
-  const handleDragEnd = (_event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo, index: number) => {
+  const handleDragEnd = (_event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo, index: number, image: string) => {
     if (Math.abs(info.offset.x) > swipeThreshold) {
-      handleSwipe(index, dragDirections[index] ?? (info.offset.x > 0 ? "right" : "left"));
+      handleSwipe(index, image, dragDirections[image] ?? (info.offset.x > 0 ? "right" : "left"));
       return;
     }
 
-    setDragDirections((prev) => ({ ...prev, [index]: null }));
+    setDragDirections((prev) => ({ ...prev, [image]: null }));
   };
 
-  const handleSwipe = (index: number, direction: "left" | "right") => {
-    setDragDirections((prev) => ({ ...prev, [index]: direction }));
+  const handleSwipe = (index: number, image: string, direction: "left" | "right") => {
+    setDragDirections((prev) => ({ ...prev, [image]: direction }));
 
     window.setTimeout(() => {
       setCards((prevCards) => {
@@ -81,13 +81,14 @@ export function SwipeableCardStack({
         const remainingCards = prevCards.filter((_, cardIndex) => cardIndex !== index);
         return [swipedCard, ...remainingCards];
       });
+      setDragDirections({});
     }, 280);
   };
 
   const showNextCard = (direction: "left" | "right") => {
     if (cards.length === 0) return;
 
-    handleSwipe(cards.length - 1, direction);
+    handleSwipe(cards.length - 1, cards[cards.length - 1], direction);
   };
 
   const showPreviousCard = () => {
@@ -97,6 +98,7 @@ export function SwipeableCardStack({
       const [firstCard, ...remainingCards] = prevCards;
       return [...remainingCards, firstCard];
     });
+    setDragDirections({});
   };
 
   return (
@@ -104,17 +106,17 @@ export function SwipeableCardStack({
       <AnimatePresence>
         {cards.map((image, index) => {
           const isTopCard = index === cards.length - 1;
-          const direction = dragDirections[index];
+          const direction = dragDirections[image];
           const stackOffset = cards.length - 1 - index;
 
           return (
             <motion.div
-              key={`${image}-${index}`}
+              key={image}
               drag={isTopCard ? "x" : false}
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={0.48}
-              onDrag={(event, info) => handleDrag(event, info, index)}
-              onDragEnd={(event, info) => handleDragEnd(event, info, index)}
+              onDrag={(event, info) => handleDrag(event, info, image)}
+              onDragEnd={(event, info) => handleDragEnd(event, info, index, image)}
               initial={{ scale: 0.94, y: 28, opacity: 0 }}
               animate={{
                 scale: isTopCard ? 1 : 1 - stackOffset * 0.045,
