@@ -13,6 +13,11 @@ type SwipeableCardStackProps = {
   rightIcon?: string | null;
   leftIcon?: string | null;
   renderCard?: (image: string, index: number) => React.ReactNode;
+  renderControls?: (actions: {
+    canSwipe: boolean;
+    swipeLeft: () => void;
+    swipeRight: () => void;
+  }) => React.ReactNode;
 };
 
 export function SwipeableCardStack({
@@ -26,7 +31,8 @@ export function SwipeableCardStack({
   shadowBlur = "rgba(0, 0, 0, 0.45)",
   rightIcon = null,
   leftIcon = null,
-  renderCard
+  renderCard,
+  renderControls
 }: SwipeableCardStackProps) {
   const [cards, setCards] = React.useState([...images]);
   const [dragDirections, setDragDirections] = React.useState<Record<number, "left" | "right" | null>>({});
@@ -68,8 +74,29 @@ export function SwipeableCardStack({
     setDragDirections((prev) => ({ ...prev, [index]: direction }));
 
     window.setTimeout(() => {
-      setCards((prevCards) => prevCards.filter((_, cardIndex) => cardIndex !== index));
+      setCards((prevCards) => {
+        const swipedCard = prevCards[index];
+        if (!swipedCard || prevCards.length <= 1) return prevCards;
+
+        const remainingCards = prevCards.filter((_, cardIndex) => cardIndex !== index);
+        return [swipedCard, ...remainingCards];
+      });
     }, 280);
+  };
+
+  const showNextCard = (direction: "left" | "right") => {
+    if (cards.length === 0) return;
+
+    handleSwipe(cards.length - 1, direction);
+  };
+
+  const showPreviousCard = () => {
+    if (cards.length <= 1) return;
+
+    setCards((prevCards) => {
+      const [firstCard, ...remainingCards] = prevCards;
+      return [...remainingCards, firstCard];
+    });
   };
 
   return (
@@ -141,6 +168,11 @@ export function SwipeableCardStack({
           );
         })}
       </AnimatePresence>
+      {renderControls?.({
+        canSwipe: cards.length > 0,
+        swipeLeft: showPreviousCard,
+        swipeRight: () => showNextCard("right")
+      })}
     </div>
   );
 }

@@ -591,6 +591,30 @@ body {
   z-index: 2;
 }
 
+.phone-showcase-scroll {
+  scroll-snap-type: x mandatory;
+  scrollbar-color: rgba(253, 36, 121, 0.72) rgba(255, 255, 255, 0.08);
+  scrollbar-width: thin;
+}
+
+.phone-showcase-scroll::-webkit-scrollbar {
+  height: 0.55rem;
+}
+
+.phone-showcase-scroll::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.phone-showcase-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(135deg, #fe064d, #fd2479);
+}
+
+.phone-showcase-grid > * {
+  scroll-snap-align: center;
+}
+
 .testimonial-carousel {
   scroll-snap-type: x mandatory;
   scrollbar-width: none;

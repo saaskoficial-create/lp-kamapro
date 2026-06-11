@@ -5,6 +5,8 @@ import {
   ArrowRight,
   Check,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   Flame,
   Gamepad2,
   Heart,
@@ -176,7 +178,7 @@ function ExampleCards() {
       description:
         "Até a pose mais simples pode entregar experiências inesquecíveis, ou virar mais uma marca na lista do que já foi testado",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "gamepro", "casal", "+8"]
     },
     {
@@ -185,7 +187,7 @@ function ExampleCards() {
       description:
         "Nesta pose não há o que pensar — desligue os pensamentos, abrace o parceiro e absorva tudo, procurando harmonia na proximidade, na ternura e no tempo que passam juntos.",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "harmonia", "proximidade", "+8"]
     },
     {
@@ -194,7 +196,7 @@ function ExampleCards() {
       description:
         "Corpos em alta voltagem reagem ao menor toque, acendem como fósforos — e esta pose permite saciar a fome com olhares profundos e penetração intensa.",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "intenso", "olhares", "+8"]
     },
     {
@@ -203,7 +205,7 @@ function ExampleCards() {
       description:
         "Um pouco de doce nunca fez mal a ninguém — especialmente quando a parceira é o próprio doce, e nesta pose dá para experimentar a profundidade desse sabor preferido.",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "profundo", "casal", "+8"]
     },
     {
@@ -212,7 +214,7 @@ function ExampleCards() {
       description:
         "A linguagem corporal é absurdamente eloquente — em vez de várias piruetas, basta uma única pose bem provocante.",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "provocante", "corpo", "+8"]
     },
     {
@@ -221,7 +223,7 @@ function ExampleCards() {
       description:
         "Acaricie o pênis do parceiro com extrema delicadeza usando a boca — ele vai enlouquecer com o cuidado, especialmente nesta pose em que basta se deitar e absorver cada onda de prazer.",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "oral", "cuidado", "+8"]
     },
     {
@@ -230,7 +232,7 @@ function ExampleCards() {
       description:
         "Esta pose ganhou este nome fatídico porque a mulher fica totalmente nas mãos do parceiro, de corpo e alma — é ele quem decide quando esse jogo termina.",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "entrega", "jogo", "+8"]
     },
     {
@@ -239,7 +241,7 @@ function ExampleCards() {
       description:
         "Esta pose entrega ao parceiro uma oportunidade rara: encontrar o ponto G com precisão, graças ao posicionamento plano do corpo da mulher e ao acesso totalmente desimpedido à região íntima.",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "ponto g", "precisão", "+8"]
     },
     {
@@ -248,7 +250,7 @@ function ExampleCards() {
       description:
         "Esta é uma versão muito interessante e prática do 69 — se vocês são casal que pratica sexo oral, anote essa configuração. A mulher se acomoda deitada de costas e eleva completamente as pernas estendidas.",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "oral", "69", "+8"]
     },
     {
@@ -257,7 +259,7 @@ function ExampleCards() {
       description:
         "Amem, se beijem, façam amor e provem um ao outro — quando vocês se entregam totalmente, isso fortalece ainda mais os sentimentos e as emoções compartilhadas.",
       difficulty: "Médio",
-      rating: "0.0",
+      rating: "4.9",
       tags: ["pose", "beijo", "entrega", "+8"]
     }
   ];
@@ -326,6 +328,28 @@ function PoseCardDeck({
 
           return <PoseFlipCard card={card} />;
         }}
+        renderControls={({ canSwipe, swipeLeft, swipeRight }) => (
+          <div className="pointer-events-none absolute inset-x-0 top-1/2 z-30 flex -translate-y-1/2 justify-between px-2 sm:-inset-x-6 sm:px-0">
+            <button
+              aria-label="Card anterior"
+              className="pointer-events-auto grid size-11 place-items-center rounded-full border border-white/15 bg-black/70 text-white shadow-glow backdrop-blur-xl transition hover:border-kama-red/60 hover:bg-black/85 disabled:cursor-not-allowed disabled:opacity-35"
+              disabled={!canSwipe}
+              onClick={swipeLeft}
+              type="button"
+            >
+              <ChevronLeft className="size-5" />
+            </button>
+            <button
+              aria-label="Próximo card"
+              className="pointer-events-auto grid size-11 place-items-center rounded-full border border-white/15 bg-black/70 text-white shadow-glow backdrop-blur-xl transition hover:border-kama-red/60 hover:bg-black/85 disabled:cursor-not-allowed disabled:opacity-35"
+              disabled={!canSwipe}
+              onClick={swipeRight}
+              type="button"
+            >
+              <ChevronRight className="size-5" />
+            </button>
+          </div>
+        )}
       />
     </div>
   );
@@ -1015,10 +1039,12 @@ function ProductAccess() {
         </div>
         <div className="relative mt-14 w-full sm:mt-16">
           <div className="brand-orb phone-showcase-orb" aria-hidden="true" />
-          <div className="phone-showcase-grid mx-auto grid max-w-5xl items-end gap-5 sm:grid-cols-3">
-            <PhoneShell className="hidden sm:block" video={proofVideos[0]} />
-            <PhoneShell video={proofVideos[1]} featured />
-            <PhoneShell className="hidden sm:block" video={proofVideos[2]} />
+          <div className="phone-showcase-scroll -mx-5 overflow-x-auto px-5 pb-5 sm:mx-auto sm:overflow-visible sm:px-0 sm:pb-0">
+            <div className="phone-showcase-grid mx-auto flex w-max max-w-none items-end gap-5 sm:grid sm:w-auto sm:max-w-5xl sm:grid-cols-3">
+              <PhoneShell video={proofVideos[0]} />
+              <PhoneShell video={proofVideos[1]} featured />
+              <PhoneShell video={proofVideos[2]} />
+            </div>
           </div>
         </div>
       </div>
